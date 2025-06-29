@@ -4,6 +4,13 @@ import urllib.parse
 import time
 import json
 from datetime import datetime
+import streamlit as st
+
+# Riot verification route
+if st.query_params.get("riot") == "verify":
+    st.markdown("d83979f7-6227-492f-8b40-14c088df6b2c")
+    st.stop()
+
 
 # Riot API setup
 REGION = 'europe'
